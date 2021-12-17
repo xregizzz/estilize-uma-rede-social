@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="reset.css">
+	<script src="https://kit.fontawesome.com/34244665a1.js" crossorigin="anonymous"></script>
 	<!-- META -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,22 +21,29 @@
 	<!-- CABEÇALHO -->
 	<header>
 		<a href="#" class="instagram-logo">
-			<figure>
+			<figure>		
 				<img src="./img/logo.png" alt="Instagram logo">
 			</figure>
 		</a>
+		<input type="text" class="input-search" name="input-search" placeholder=" Pesquisar por"> 
+		<span>
+			<button class="generic-button" type="button">Login</button>
+			<button class="generic-button2" type="button">Sing in</button>
+		</span>
 	</header>
-
+	
 	<!-- CONTEÚDO DA PÁGINA -->
+	<div class="main-content">
 	<main>
-
 		<!-- CONTEÚDO SOBRE O USUÁRIO -->
 		<article class="profile-content">
 
 			<!-- FOTO DE PERFIL DO USUÁRIO -->
 			<section class="profile-photo">
 				<figure>
+					<div class="profile-border">
 					<img src="./img/profile-photo.png" alt="Profile photo">
+					</div>
 				</figure>
 			</section>
 
@@ -42,28 +51,30 @@
 			<section class="profile-info">
 				<div class="profile-follow">
 					<h1>kenzieacademybr</h1>
-					<button>Follow</button>
+					<button class="generic-button">Follow</button>
 				</div>
 				<!-- POSTS/SEGUIDORES/SEGUINDO -->
 				<div class="profile-data">
-					<p><span>759</span>publicações</p>
-					<p><span>38,4mil</span>Seguidores</p>
-					<p><span>281</span>Seguindo</p>
+					<p><span>759</span> Publicações</p>
+					<p><span>38,4mil</span> Seguidores</p>
+					<p><span>281</span> Seguindo</p>
 				</div>
-
-				<h2> Kenzie Academy Brasil </h2>
-				<ul>
-					<li>
-						<p>Vire um programador em 12 meses: Aprenda agora. Pague depois</p>
-					</li>
-					<li>
-						<p>98% dos alunos contratados em menos de 1 mês após a formatura</p>
-					</li>
-					<li>Link</li>
-					<li>
-						<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
-					</li>
-				</ul>
+	
+				<div class="profile-description">					
+					<ul>
+						<h2> Kenzie Academy Brasil </h2>
+						<li>
+							<p>Vire um programador em 12 meses: Aprenda agora. Pague depois</p>
+						</li>
+						<li>
+							<p>98% dos alunos contratados em menos de 1 mês após a formatura</p>
+						</li>
+						<li>Link</li>
+						<li>
+							<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
+						</li>
+					</ul>
+				</div>				
 			</section>
 		</article>
 
@@ -104,8 +115,7 @@
 			</nav>
 
 			<!-- LISTA DE POSTS -->
-			<ul>
-
+			<ul class="image-posts">
 				<!-- POST -->
 				<li>
 					<a href="#">
@@ -151,7 +161,7 @@
 					</a>
 				</li>
 				
-				<!-- POST -->
+				<!-- POST --> 
 				<li>
 					<a href="#">
 						<figure>
@@ -162,5 +172,7 @@
 			</ul>
 		</article>
 	</main>
+</div>
+	<footer></footer>
 </body>
 </html>
