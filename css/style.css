@@ -1,6 +1,9 @@
 /*BODY*/
 body{
 	font-family: Helvetica;
+	max-width: 900px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 p{
@@ -14,7 +17,6 @@ span, h2{
 /*TOPO*/
 header{
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	width: 100vw;
 	height: 10vh;
@@ -72,7 +74,7 @@ header{
 
 /*PÁGINA INICIAL*/
 main{
-	max-width: 900px;
+	/* max-width: 900px; */
 }
 
 .main-content{
@@ -110,6 +112,11 @@ main .profile-data{
 	align-items: center;
 }
 
+main .profile-data p span{
+	font-family: roboto;
+	font-weight: 800;
+}
+
 main .profile-data p:nth-child(2){
 	margin: 0 25px;
 }
@@ -124,6 +131,7 @@ main .profile-description a{
 	text-decoration: none;
 	color: #12376A;
 	font-weight: bold;
+	font-family: Arial;
 }
 
 main .profile-description h2{
@@ -178,6 +186,7 @@ main .profile-posts a{
 	margin-left: 7px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-family: sans-serif;
 }
 
 main .profile-posts nav ul{
